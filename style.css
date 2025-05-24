@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -54,18 +55,24 @@ header::after {
 
 /* Hero */
 .hero {
+  height: 50vh;
   text-align: center;
   padding: 100px 20px;
-  background-color: #e6f0fa;
+   color: white;
+   text-shadow: 5px 5px 5px #0077cc;
+  background: url(images/back2.jpg);
+  background-size: 100% 100%;
 }
 
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+   text-shadow: 5px 5px 5px #0077cc;
 }
 
 .hero p {
   font-size: 1.2rem;
+   text-shadow: 5px 5px 5px #0077cc;
 }
 
 /* Section Base */
@@ -99,6 +106,7 @@ header::after {
 /* Moments */
 .moment-carousel {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -108,42 +116,30 @@ header::after {
   padding: 20px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  border-left: 4px solid ;
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 
-/* Subscribe */
-.subscribe form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 
-.subscribe input {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-.subscribe button {
-  padding: 12px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.subscribe button:hover {
-  background-color: #005fa3;
-}
+/* about section */
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
-  background: #d9ecff;
+ background-color: #0077cc;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #333;
+ color: white;
 }
